@@ -12,5 +12,6 @@ def add_numbers():
     b = int(request.form.get("b", 0))
     return jsonify(result=a + b)
 
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
