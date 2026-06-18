@@ -8,14 +8,14 @@ pipeline {
 
     stages {
 
-        stage('checkout') {
-            steps {
-                git branch: 'main',
-                    credentialsId: 'Github_credentials',
-                    poll: false,
-                    url: 'https://github.com/bhavithreddy/simple-flask-apk.git'
-            }
-        }
+        //stage('checkout') {
+       // steps {
+           //     git branch: 'main',
+          //          credentialsId: 'Github_credentials',
+            //        poll: false,
+             //       url: 'https://github.com/bhavithreddy/simple-flask-apk.git'
+            //}
+       // }
 
         stage('build') {
             steps {
